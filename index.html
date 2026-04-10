@@ -337,6 +337,27 @@ footer{
 }
 .footer-tagline strong{color:var(--green);font-weight:700}
 
+/* Disclaimer banner */
+.disclaimer{
+  background:#0D1421;
+  border:1px solid #2A3A20;
+  border-left:3px solid #4A7A30;
+  border-radius:8px;
+  padding:12px 16px;
+  margin-bottom:24px;
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+}
+.disclaimer-icon{
+  font-size:14px;color:#6AAF40;flex-shrink:0;margin-top:1px;
+  font-family:var(--font-mono);font-weight:600;
+}
+.disclaimer-text{
+  font-size:11px;line-height:1.6;color:var(--text-muted);
+}
+.disclaimer-text strong{color:#6AAF40;font-weight:700}
+
 /* Pulse animation for counter when it changes */
 @keyframes pulse-red{0%{opacity:1}50%{opacity:0.6}100%{opacity:1}}
 .pulsing{animation:pulse-red 0.4s ease}
@@ -384,6 +405,14 @@ footer{
     <div class="value" id="live-time">--</div>
   </div>
 </header>
+
+<!-- Disclaimer -->
+<div class="disclaimer">
+  <div class="disclaimer-icon">§</div>
+  <div class="disclaimer-text">
+    <strong>For Illustrative Purposes Only.</strong> Exposure estimates are based on reported enforcement actions, regulatory guidance, and state tax nexus precedents from 2022–2025. Risk multipliers reflect relative enforcement intensity and are not actuarially derived. This tool does not constitute legal or tax advice. Actual liability will vary based on your organization's specific facts, employment classifications, and applicable state law. <strong>Consult qualified legal and tax counsel before making compliance decisions.</strong>
+  </div>
+</div>
 
 <!-- Exposure Counter -->
 <div class="section-label">Estimated Annual Exposure</div>
